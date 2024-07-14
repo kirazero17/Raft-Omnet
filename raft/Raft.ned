@@ -1,6 +1,8 @@
 //
 // Model of the network, consisting of serveral servers(the cluster), a client, and a switch that connect them
 //
+package raft;
+
 network Raft
 {
     parameters:
@@ -19,7 +21,7 @@ network Raft
             parameters:
                 @display("p=210,170");
             gates:
-                port[numServers+numClients+1]; // 1 extra port for the admin
+                port[parent.numServers+parent.numClients+1]; // 1 extra port for the admin
         }
         server[numServers]: Server {
             parameters:

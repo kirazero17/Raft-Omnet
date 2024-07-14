@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>Raft</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Raft</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <p>Package: <a class="reference-ned" href="packages.html#raft">raft</a></p>
+<h2 class="comptitle" style="float: left;">Raft</h2>
+<span class="mdl-chip" style="float: right; margin-top: 6pt; background-color: #2196f340;">
+    <span class="mdl-chip__text">network</span>
+</span><div style="clear: both;"/>
+<p>(no description)</p>
+<img src="raft.Raft-type.svg" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="raft.Admin.html" title="admin : Admin
+
+Source:
+admin: Admin {
+    parameters:
+        @display(&quot;p=70,40&quot;);
+}" alt="admin : Admin
+
+Source:
+admin: Admin {
+    parameters:
+        @display(&quot;p=70,40&quot;);
+}" coords="51,60,96,121">
+<area shape="rect" href="raft.Client.html" title="client[numClients] : Client
+
+Source:
+client[numClients]: Client {
+    parameters:
+        @display(&quot;p=210,70,m,10,200&quot;);
+}" alt="client[numClients] : Client
+
+Source:
+client[numClients]: Client {
+    parameters:
+        @display(&quot;p=210,70,m,10,200&quot;);
+}" coords="151,92,273,149">
+<area shape="rect" href="raft.Switch.html" title="switch : Switch
+
+Source:
+switch: Switch {
+    parameters:
+        @display(&quot;p=210,170&quot;);
+    gates:
+        port[numServers+numClients+1]; // 1 extra port for the admin
+}" alt="switch : Switch
+
+Source:
+switch: Switch {
+    parameters:
+        @display(&quot;p=210,170&quot;);
+    gates:
+        port[numServers+numClients+1]; // 1 extra port for the admin
+}" coords="182,190,252,252">
+<area shape="rect" href="raft.Server.html" title="server[numServers] : Server
+
+Source:
+server[numServers]: Server {
+    parameters:
+        @display(&quot;p=70,270,m,10,320&quot;);
+}" alt="server[numServers] : Server
+
+Source:
+server[numServers]: Server {
+    parameters:
+        @display(&quot;p=70,270,m,10,320&quot;);
+}" coords="7,291,138,350">
+</map>
+<h3 class="subtitle">Usage diagram</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.</p>
+<object type="image/svg+xml" data="raft.Raft-usage.svg"></object>
+<h3 class="subtitle">Parameters</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr class="local">
+      <td>numServers</td>
+      <td>int</td>
+      <td>3</td>
+      <td></td>
+   </tr>
+   <tr class="local">
+      <td>numClients</td>
+      <td>int</td>
+      <td>2</td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Properties</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td>isNetwork</td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters</h3>
+<table class="deepparamstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a title="raft.Admin" href="raft.Admin.html">admin</a>.numberOfNewServers</td>
+      <td>int</td>
+      <td>2</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Admin" href="raft.Admin.html">admin</a>.numberOfserversToRemove</td>
+      <td>int</td>
+      <td>1</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Admin" href="raft.Admin.html">admin</a>.resendTimer</td>
+      <td>double</td>
+      <td>1s</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Admin" href="raft.Admin.html">admin</a>.changeConfigTime</td>
+      <td>double</td>
+      <td>5s</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Client" href="raft.Client.html">client</a>.lowCommandTimeout</td>
+      <td>double</td>
+      <td>2s</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Client" href="raft.Client.html">client</a>.highCommandTimeout</td>
+      <td>double</td>
+      <td>3s</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Client" href="raft.Client.html">client</a>.requestTimeout</td>
+      <td>double</td>
+      <td>0.5s</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Client" href="raft.Client.html">client</a>.clientErrorRateThreshold</td>
+      <td>double</td>
+      <td>1.0</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Switch" href="raft.Switch.html">switch</a>.delay</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.maxLogSizeBeforeSnapshot</td>
+      <td>int</td>
+      <td>20</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.errorRateThreshold</td>
+      <td>double</td>
+      <td>1.0</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.instantieatedAtRunTime</td>
+      <td>bool</td>
+      <td>false</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.hearthBeatTime</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.lowElectionTimeout</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.highElectionTimeout</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.resendTimeout</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.lowCrashTimeout</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.highCrashTimeout</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><a title="raft.Server" href="raft.Server.html">server</a>.reviveTimeout</td>
+      <td>double</td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src">
+<span style="color: #800000; font-weight: bold; ">network</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">Raft</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #3d3d3d; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">numServers</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; font-weight: bold; ">@prompt</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">&quot;Number of servers&quot;</span><span style="color: #3d3d3d; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">3</span><span style="color: #3d3d3d; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">numClients</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; font-weight: bold; ">@prompt</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">&quot;Number of clients&quot;</span><span style="color: #3d3d3d; ">) = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">2</span><span style="color: #3d3d3d; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #3d3d3d; ">:
+        </span><span style="color: #3d3d3d; ">admin</span><span style="color: #3d3d3d; ">: </span><span style="color: #3d3d3d; ">Admin</span><span style="color: #3d3d3d; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #3d3d3d; ">:
+                </span><span style="color: #3d3d3d; font-weight: bold; ">@display</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">&quot;p=70,40&quot;</span><span style="color: #3d3d3d; ">);
+        }
+        </span><span style="color: #3d3d3d; ">client</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">numClients</span><span style="color: #3d3d3d; ">]: </span><span style="color: #3d3d3d; ">Client</span><span style="color: #3d3d3d; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #3d3d3d; ">:
+                </span><span style="color: #3d3d3d; font-weight: bold; ">@display</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">&quot;p=210,70,m,10,200&quot;</span><span style="color: #3d3d3d; ">);
+        }
+        </span><span style="color: #3d3d3d; ">switch</span><span style="color: #3d3d3d; ">: </span><span style="color: #3d3d3d; ">Switch</span><span style="color: #3d3d3d; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #3d3d3d; ">:
+                </span><span style="color: #3d3d3d; font-weight: bold; ">@display</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">&quot;p=210,170&quot;</span><span style="color: #3d3d3d; ">);
+            </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #3d3d3d; ">:
+                </span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">numServers</span><span style="color: #3d3d3d; ">+</span><span style="color: #3d3d3d; ">numClients</span><span style="color: #3d3d3d; ">+</span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; ">]; </span><span style="color: #808080; font-style: italic; ">// 1 extra port for the admin
+</span><span style="color: #3d3d3d; ">        }
+        </span><span style="color: #3d3d3d; ">server</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">numServers</span><span style="color: #3d3d3d; ">]: </span><span style="color: #3d3d3d; ">Server</span><span style="color: #3d3d3d; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #3d3d3d; ">:
+                </span><span style="color: #3d3d3d; font-weight: bold; ">@display</span><span style="color: #3d3d3d; ">(</span><span style="color: #008000; ">&quot;p=70,270,m,10,320&quot;</span><span style="color: #3d3d3d; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #3d3d3d; ">:
+        </span><span style="color: #3d3d3d; ">admin</span><span style="color: #3d3d3d; ">.</span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">switch</span><span style="color: #3d3d3d; ">.</span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; ">[</span><span style="color: #008000; ">0</span><span style="color: #3d3d3d; ">];
+        </span><span style="color: #800000; font-weight: bold; ">for</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">i</span><span style="color: #3d3d3d; ">=</span><span style="color: #008000; ">0</span><span style="color: #3d3d3d; ">..</span><span style="color: #3d3d3d; ">numClients</span><span style="color: #3d3d3d; ">-</span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; "> {
+            </span><span style="color: #3d3d3d; ">client</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">i</span><span style="color: #3d3d3d; ">].</span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #3d3d3d; "> {  </span><span style="color: #3d3d3d; ">delay</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">10</span><span style="color: #3d3d3d; ">ms</span><span style="color: #3d3d3d; ">; } </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">switch</span><span style="color: #3d3d3d; ">.</span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">i</span><span style="color: #3d3d3d; ">+</span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; ">];
+        }
+        </span><span style="color: #800000; font-weight: bold; ">for</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">i</span><span style="color: #3d3d3d; ">=</span><span style="color: #008000; ">0</span><span style="color: #3d3d3d; ">..</span><span style="color: #3d3d3d; ">numServers</span><span style="color: #3d3d3d; ">-</span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; "> {
+            </span><span style="color: #3d3d3d; ">server</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">i</span><span style="color: #3d3d3d; ">].</span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #3d3d3d; "> {  </span><span style="color: #3d3d3d; ">delay</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; ">ms</span><span style="color: #3d3d3d; ">; } </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">switch</span><span style="color: #3d3d3d; ">.</span><span style="color: #3d3d3d; ">port</span><span style="color: #3d3d3d; ">[</span><span style="color: #3d3d3d; ">numClients</span><span style="color: #3d3d3d; ">+</span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; ">+</span><span style="color: #3d3d3d; ">i</span><span style="color: #3d3d3d; ">];
+        }
+}
+</span></pre>
+File: <a href="Raft.ned.html">Raft.ned</a>
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="class">
+    <name>RPCAppendEntriesPacket</name>
+    <filename>RPCAppendEntriesPacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCAppendEntriesResponsePacket</name>
+    <filename>RPCAppendEntriesResponsePacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCClientCommandPacket</name>
+    <filename>RPCClientCommandPacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCClientCommandResponsePacket</name>
+    <filename>RPCClientCommandResponsePacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCInstallSnapshotPacket</name>
+    <filename>RPCInstallSnapshotPacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCInstallSnapshotResponsePacket</name>
+    <filename>RPCInstallSnapshotResponsePacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCPacket</name>
+    <filename>RPCPacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCPacketType</name>
+    <filename>RPCPacketType.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCRequestVotePacket</name>
+    <filename>RPCRequestVotePacket.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>RPCRequestVoteResponsePacket</name>
+    <filename>RPCRequestVoteResponsePacket.html</filename>
+  </compound>
+</tagfile>

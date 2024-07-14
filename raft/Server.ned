@@ -1,4 +1,6 @@
 //
+package raft;
+
 simple Server
 {
     parameters:

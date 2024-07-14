@@ -14,6 +14,9 @@
 // queue and served `pkRate' packets per second. The queue has a finite
 // size (overflow packets are dropped).
 //
+
+package raft;
+
 simple Switch
 {
     parameters:

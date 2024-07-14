@@ -1,0 +1,1314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.9.1">
+  <compound kind="file">
+    <name>Admin.cc</name>
+    <path>/home/kagehl/Documents/Programming/Emu/Raft-Omnet/raft/</path>
+    <filename>Admin_8cc.html</filename>
+    <includes id="Admin_8h" name="Admin.h" local="yes" imported="no">Admin.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>Admin_8cc.html</anchorfile>
+      <anchor>abe16d1df565dce82dea72a7cba56f7d2</anchor>
+      <arglist>(Admin)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Admin.h</name>
+    <path>/home/kagehl/Documents/Programming/Emu/Raft-Omnet/raft/</path>
+    <filename>Admin_8h.html</filename>
+    <class kind="class">Admin</class>
+  </compound>
+  <compound kind="file">
+    <name>Client.cc</name>
+    <path>/home/kagehl/Documents/Programming/Emu/Raft-Omnet/raft/</path>
+    <filename>Client_8cc.html</filename>
+    <class kind="class">Client</class>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>Client_8cc.html</anchorfile>
+      <anchor>a7e0e981732d527922b798a08c0a9c3f0</anchor>
+      <arglist>(Client)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>data_types.h</name>
+    <path>/home/kagehl/Documents/Programming/Emu/Raft-Omnet/raft/</path>
+    <filename>data__types_8h.html</filename>
+    <class kind="struct">latest_client_response</class>
+    <class kind="struct">cluster_configuration</class>
+    <class kind="struct">lastRPC</class>
+    <class kind="struct">log_entry</class>
+    <class kind="struct">append_entry_timer</class>
+    <class kind="struct">snapshot_file</class>
+    <class kind="struct">install_snapshot_timer</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>serverState</name>
+      <anchorfile>data__types_8h.html</anchorfile>
+      <anchor>a7b5c271c8b798870984a49d0515e05ac</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LEADER</name>
+      <anchorfile>data__types_8h.html</anchorfile>
+      <anchor>a7b5c271c8b798870984a49d0515e05aca4990051f559aff868d672005e273eb89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>FOLLOWER</name>
+      <anchorfile>data__types_8h.html</anchorfile>
+      <anchor>a7b5c271c8b798870984a49d0515e05aca53ef2dd603ff1fc0de66278342409826</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CANDIDATE</name>
+      <anchorfile>data__types_8h.html</anchorfile>
+      <anchor>a7b5c271c8b798870984a49d0515e05aca1b65362fc036345be26c100f9bd9df8b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NON_VOTING</name>
+      <anchorfile>data__types_8h.html</anchorfile>
+      <anchor>a7b5c271c8b798870984a49d0515e05acaab589103ff1df6def32deaad1372ce06</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Server.cc</name>
+    <path>/home/kagehl/Documents/Programming/Emu/Raft-Omnet/raft/</path>
+    <filename>Server_8cc.html</filename>
+    <class kind="class">Server</class>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>adce5f75ee8e50b1daf3c789cf62b4acb</anchor>
+      <arglist>(Server)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>ad1cfe1d0687801cf12a8897a2a10ec49</anchor>
+      <arglist>(std::ostream &amp;os, const vector&lt; log_entry &gt; log)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>affed836f835ce4d1dfca269980593942</anchor>
+      <arglist>(std::ostream &amp;os, const vector&lt; lastRPC &gt; RPCs)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>afcf79b698b627276c46dd322eed4c07b</anchor>
+      <arglist>(std::ostream &amp;os, const vector&lt; append_entry_timer &gt; appendEntryTimers)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>ab573c2315185ea20cddc2063ee4eae7a</anchor>
+      <arglist>(std::ostream &amp;os, const vector&lt; install_snapshot_timer &gt; installSnapshotTimers)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>a0fa801fa431de9d0dd08bf8a1eedc178</anchor>
+      <arglist>(std::ostream &amp;os, const snapshot_file snap)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>Server_8cc.html</anchorfile>
+      <anchor>ac8d13d6159a59d3ba63540108c7c5e15</anchor>
+      <arglist>(std::ostream &amp;os, const vector&lt; latest_client_response &gt; latestClientResponses)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Switch.cc</name>
+    <path>/home/kagehl/Documents/Programming/Emu/Raft-Omnet/raft/</path>
+    <filename>Switch_8cc.html</filename>
+    <class kind="class">Switch</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>STACKSIZE</name>
+      <anchorfile>Switch_8cc.html</anchorfile>
+      <anchor>a21d9543c516fffee84a7963224271f95</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>Switch_8cc.html</anchorfile>
+      <anchor>a42cf8361aec8f65546acd94276bde47e</anchor>
+      <arglist>(Switch)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Admin</name>
+    <filename>classAdmin.html</filename>
+    <base>omnetpp::cSimpleModule</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Admin</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a8fb5fe72fb4e05d50980c13cdf3b779c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; int &gt;</type>
+      <name>configuration</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a830acab02f648b25051e312553ec5a34</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a21c3763332e5e744af590924c6131bc6</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>aabb54a6799b9e6d38ad01814d25d4e60</anchor>
+      <arglist>(cMessage *msg) override</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>createNewServer</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a1aecafb2e415c24d877379e0f51eab13</anchor>
+      <arglist>(int index)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>deleteServer</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a24349d69e245d9a84ac13177d610ed7d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>updateConfiguration</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>ad2ea8e31d89cb235fefe99a74044eaba</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>sendChangeConfig</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>af67422da53e98e977f5c35e1d9ca9187</anchor>
+      <arglist>(bool onlyServer)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>myAddress</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>ac05a9f97c81dcdb9d62fbefa64e149cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>numberOfNewServers</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a1ee2b0839f3311a0842786558255deda</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>numberOfServersToRemove</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a8398baaf049bf4cd1f574eee04338b60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>numberOfserversToRemove</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>ab291d779f51f715be33603bf0ae99b73</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>sequenceNumber</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a29a6bed767780cb6c8279de76f87a327</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>toPurge</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a230af8027b9c0f8d099d66ccca0f8c38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cModule *</type>
+      <name>Switch</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a7b6bd1f132e0d734be0e9bc6dd848066</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cModule *</type>
+      <name>serverToPurge</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a187cb3cf25a2499a258f587da8f87b10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>changeConfig</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a66e15f5f62b404f33fb436a6d904ca6c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>resendTimer</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>afc6f1e9ee6e299b23448e5133d3215b4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cGate *</type>
+      <name>newServerPortIN</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a8055dc4f94e243dab85f07f9f023f415</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cGate *</type>
+      <name>newServerPortOUT</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>ade9c65bb5401a87efcce20b068eb573d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cGate *</type>
+      <name>newSwitchPortIN</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a6e938726f4942752e8e7afa06b772702</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cGate *</type>
+      <name>newSwitchPortOUT</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a5390bf08b41df27e750b7ff9cdf65a86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCClientCommandPacket *</type>
+      <name>configChangedRPC</name>
+      <anchorfile>classAdmin.html</anchorfile>
+      <anchor>a58e433aa33e6524f362ccbd611b4202c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>append_entry_timer</name>
+    <filename>structappend__entry__timer.html</filename>
+    <member kind="variable">
+      <type>log_entry</type>
+      <name>entry</name>
+      <anchorfile>structappend__entry__timer.html</anchorfile>
+      <anchor>acc80c46a861fb2d676e79f069c4e90f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>destination</name>
+      <anchorfile>structappend__entry__timer.html</anchorfile>
+      <anchor>a50182225fd2a0c0acbb67099f56e2ab6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>prevLogIndex</name>
+      <anchorfile>structappend__entry__timer.html</anchorfile>
+      <anchor>acc08b03c73bfd19c27a41a02f0cd1cd6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>prevLogTerm</name>
+      <anchorfile>structappend__entry__timer.html</anchorfile>
+      <anchor>a85f27fd52f5f56f4d3a89562d774f29d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>cMessage *</type>
+      <name>timeoutEvent</name>
+      <anchorfile>structappend__entry__timer.html</anchorfile>
+      <anchor>ae3a94b649c65e29d7566b35b3185db3b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Client</name>
+    <filename>classClient.html</filename>
+    <base>omnetpp::cSimpleModule</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Client</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a840e519ca781888cbd54181572ebe3a7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>refreshDisplay</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>aed62a9c98b00546762f4cb98f3fe23b6</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a1e9e46137845e25123aa3894d2e07c8e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a88b93482ea49af31badd02b1621625de</anchor>
+      <arglist>(cMessage *msg) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>chooseNextRandomOp</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>ab4e117f2fd78b5694e66ed751b989486</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>chooseRandomServer</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a074d7494a900f624a1adf47ba05ef582</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>initializeConfiguration</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a57368795e1b4d127177dba06b2a452c1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>isInConfig</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a8d750b1dc13308b5d626a583e2947a21</anchor>
+      <arglist>(int destAddress)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>myAddress</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>acc9e24154e102f596e4d939365c22a5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>adminAddress</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a92d576c8562a09620a6ae098725a80cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>receiverAddress</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a1ad2e3963c165df26c1f6f6c79e93388</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>configuration</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a7a1cbfd047a9e0c63db3d1b9e5a33740</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>value</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a517bf9bc33579fb2a63a6f50bc65ee04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>sequenceNumber</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a44947ee60340e4e15a82f7550b2b2787</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>sendWrite</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a099e1ad7162ff7702c2044ac05cd3299</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>sendRead</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a891cc7e861e7d6f7d675a9c04b354501</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>requestTimeoutRead</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a7229fd7f2385e81298f1ae9a8bd4c218</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>requestTimeoutWrite</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>af38205a65923c5b8ac7756154d214103</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCClientCommandPacket *</type>
+      <name>clientCommandRPC</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>aa2965b42187038268a37c684bb5f4043</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const int</type>
+      <name>READ</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>aaf71763ce1001380e4dd7bdd40729757</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const int</type>
+      <name>WRITE</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a5b059a6881f5cad43e5711ad6558b3ef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>lastOperation</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a8927933a06104d9b25a06d6499538a77</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>isRedirect</name>
+      <anchorfile>classClient.html</anchorfile>
+      <anchor>a7e03536c5ac49a85f3e0da8cdc1b8c42</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>cluster_configuration</name>
+    <filename>structcluster__configuration.html</filename>
+    <member kind="variable">
+      <type>vector&lt; int &gt;</type>
+      <name>servers</name>
+      <anchorfile>structcluster__configuration.html</anchorfile>
+      <anchor>ae682dcd58d29f4c15c1ede160a02c4ff</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>install_snapshot_timer</name>
+    <filename>structinstall__snapshot__timer.html</filename>
+    <member kind="variable">
+      <type>snapshot_file</type>
+      <name>snapshot</name>
+      <anchorfile>structinstall__snapshot__timer.html</anchorfile>
+      <anchor>a6a0d3c49c4a431f01f4853349b25f8b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>destination</name>
+      <anchorfile>structinstall__snapshot__timer.html</anchorfile>
+      <anchor>ab7ffa0880403280601470b0051760b5a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>lastIncludedIndex</name>
+      <anchorfile>structinstall__snapshot__timer.html</anchorfile>
+      <anchor>aaeaccc372858258187d1eb0064fc9e7b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>lastIncludedTerm</name>
+      <anchorfile>structinstall__snapshot__timer.html</anchorfile>
+      <anchor>adfa88ea513e685f35b75cd3cccf05076</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>cMessage *</type>
+      <name>timeoutEvent</name>
+      <anchorfile>structinstall__snapshot__timer.html</anchorfile>
+      <anchor>ab9a3e475508d86a8feef774bc1227864</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>lastRPC</name>
+    <filename>structlastRPC.html</filename>
+    <member kind="variable">
+      <type>bool</type>
+      <name>success</name>
+      <anchorfile>structlastRPC.html</anchorfile>
+      <anchor>ace1003ba0e28e86d75c77e40124b7173</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>sequenceNumber</name>
+      <anchorfile>structlastRPC.html</anchorfile>
+      <anchor>ae994d468cc2ff6739c324ff8487a08d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isHeartbeat</name>
+      <anchorfile>structlastRPC.html</anchorfile>
+      <anchor>a53b0a44abcd9c2fe21b92b0a59e1e06a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>latest_client_response</name>
+    <filename>structlatest__client__response.html</filename>
+    <member kind="variable">
+      <type>int</type>
+      <name>clientAddress</name>
+      <anchorfile>structlatest__client__response.html</anchorfile>
+      <anchor>aae64306cb8e0e972a95111df2e08213b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>latestSequenceNumber</name>
+      <anchorfile>structlatest__client__response.html</anchorfile>
+      <anchor>a27a8162119f442b617fcd6ed937ded98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>latestReponseToClient</name>
+      <anchorfile>structlatest__client__response.html</anchorfile>
+      <anchor>a322fb1dae73759060ade4e8e5f7d7047</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>currentSequenceNumber</name>
+      <anchorfile>structlatest__client__response.html</anchorfile>
+      <anchor>ac2060749c35e30cb39ae6652da2d7215</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>log_entry</name>
+    <filename>structlog__entry.html</filename>
+    <member kind="variable">
+      <type>char</type>
+      <name>var</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>ad50bd4bd67e332024afad507818f6170</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>value</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>a17372727d30b4a5c06fe0e9c66335dc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>term</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>a4f8f57def31bf86125572af2bef3fac6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>logIndex</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>a84a0cae42b66a3066a731d2ac3ed0faa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>clientAddress</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>adbbdde58968c9bca14051383ce697b0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; int &gt;</type>
+      <name>cOld</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>af678e99b930c1ed98539e21b60bef0c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; int &gt;</type>
+      <name>cNew</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>a2560980541b13d133b69ac79077093b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; latest_client_response &gt;</type>
+      <name>clientsData</name>
+      <anchorfile>structlog__entry.html</anchorfile>
+      <anchor>a4b0f30009e7dbf27a6c03ab8b1471c24</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Server</name>
+    <filename>classServer.html</filename>
+    <base>omnetpp::cSimpleModule</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Server</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a4b3aa2579cb1c8cd1d069582c14d0fa6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>refreshDisplay</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a674f9db52b8be6038001118c1d635431</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a1dffd80a23a7cddfb25aef488cba94e9</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aa8e6ad1ba5e76ccc9c492a4ddede2e67</anchor>
+      <arglist>(cMessage *msg) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>initializeConfiguration</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a4d1df27aa3abda1f0369f9e73fedb693</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>appendNewEntry</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a012537f7e02d33da12d27d5f9b03bc82</anchor>
+      <arglist>(log_entry newEntry, bool onlyToNewServers)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>getIndex</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a2d70a7348566d3e96a9f3bb12cd38d35</anchor>
+      <arglist>(vector&lt; int &gt; v, int K)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>appendNewEntryTo</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a58e087d9b9508716c375808476344084</anchor>
+      <arglist>(log_entry newEntry, int destAddress, int serverIndex)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>majority</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a351bf32fb174a905527cc9bda7a541ec</anchor>
+      <arglist>(int N)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>applyCommand</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a77f1358a5815f8a8f27344239a787999</anchor>
+      <arglist>(log_entry entry)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>replayLog</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ad0b1edaa3931786c599cd1a7532b476d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>becomeLeader</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a23d272ce1e637a042b28c0cd294b3401</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>becomeCandidate</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a8105e2f978bff2204b859c9febd4aa2c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>becomeFollower</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a2ed40ad9456178e1343e6a50915f8499</anchor>
+      <arglist>(RPCPacket *pkGeneric)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>updateTerm</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a82428432f0b8fdc623586e8e98b5aacb</anchor>
+      <arglist>(RPCPacket *pkGeneric)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>getClientIndex</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a0c69dc298633a785bed519a3a74a1b54</anchor>
+      <arglist>(int clientAddress)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendAck</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>afd07cd0144dccdf347cb0d395d192a3b</anchor>
+      <arglist>(int destAddress, int seqNum)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendResponseToClient</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aca1c5e7c1d78e892b3216e7c0d20fa0e</anchor>
+      <arglist>(int type, int clientAddress)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>startReadOnlyLeaderCheck</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a45cd62ed5ab733c2400d476bc415c69d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>checkNewServersAreUpToDate</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a31a0d9843e959f2af1906a474b2458fa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendHeartbeatToFollower</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aa09593a9165fea57610d23b5c7cad438</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendRequestVote</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a69f4ef5272cd5acf16eee3e54a1cde7f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>takeSnapshot</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ad0ca05600be04c010941bb1ae8a1c0c8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>int</type>
+      <name>getEntryIndexPositionInLog</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a503d15c302925799d610aa8fc6dc2494</anchor>
+      <arglist>(int entryIndex)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendSnapshot</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a6f3fe38376606550eb01ad9bafd5fc0e</anchor>
+      <arglist>(int destAddress)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>sendSnapshotResponse</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ad7a6f5248f8a059c53883f1ab8b86e81</anchor>
+      <arglist>(int destAddress, int seqNum)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>checkValidRPCResponse</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a0e42894f59c22b213217a24dd567bacf</anchor>
+      <arglist>(int sender, int SN)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>bool</type>
+      <name>checkHeartbeatResponse</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a7b2284199a8722746256c3ff7d0dce63</anchor>
+      <arglist>(int sender)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>applySnapshot</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a858cbedd88100b9a6b318acffed0a3e0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const int</type>
+      <name>READ</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>af2970d050256a6287f3aedec71827092</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>const int</type>
+      <name>WRITE</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>afc33bd0b5fb5e76fb0a88c90a9cb4cf7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>serverState</type>
+      <name>status</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a3ae9495410a200532da331db1ada2c42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>sendHearthbeat</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a6ddfda9f30664e93c00f212a83bed0d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>electionTimeoutEvent</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a1a5ae66bb973d0441a531aaddd5df98b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>minElectionTimeoutEvent</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a9f4505cd7fd1e6aef1f143cd8db500a0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>crashTimeoutEvent</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aa99fc13fdec458bdcdad003645895344</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>cMessage *</type>
+      <name>reviveTimeoutEvent</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a29f92f0b362000657d069e3f01974398</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; append_entry_timer &gt;</type>
+      <name>appendEntryTimers</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a2be74ebd2603e9e06d825ce5c75e9fa7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; install_snapshot_timer &gt;</type>
+      <name>installSnapshotTimers</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>acf68b30f57fa813e3374dff7a45a6deb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>myAddress</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a0a2d84c228de00e6f8d568f90a0e149a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>receiverAddress</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a9cdd193a60c9f0603304748ec107afaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>adminAddress</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a703699f04be9fdcc3a7363c524774212</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>votes</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a4aa2cbf0b6d0dcd2e50c7c1a3cbcf6a6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>votesNewConfig</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a8eeada3587337d2f4a239062bd8777ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>leaderAddress</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ab58889f4d2f9786c9da3f94d233f3ae5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>acks</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a0d4227dea50f9c3f7e2ec0fe377885dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>acksNewConf</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a08474006757ad6c2d7dec2a685cfe5b4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>countingFeedback</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ae9061972e1a80c74f011af3fd8cc96df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>heartbeatSeqNum</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a1814464e8463aea47295466a2e20f3c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>waitingNoOp</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a21b143f8fac9415860b11d7b275c5a6c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>pendingReadClients</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a39bd5db893947343790531a793e4e4f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>believeCurrentLeaderExists</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ad9e9fb6a6c56fefde47fe92784a18214</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>newServersCanVote</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a6823fba29a113b415c5c3b647d7d7a1c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>bool</type>
+      <name>iAmCrashed</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ab4e8a556c50aa54e4e4152346c3f9a3a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; lastRPC &gt;</type>
+      <name>RPCs</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a21be60fced843aa2dd90b446db774718</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; lastRPC &gt;</type>
+      <name>RPCsNewConfig</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>afa464934dcc389e2077f55b9ea92ca68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCAppendEntriesPacket *</type>
+      <name>appendEntriesRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a64e2b7d5b7c24f527bedc5dd2d7d937f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCAppendEntriesResponsePacket *</type>
+      <name>appendEntriesResponseRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a9eeb354675bc1a376a252f8f91a937f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCRequestVotePacket *</type>
+      <name>requestVoteRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a472403f483e3fccca6d5df36cebd2909</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCRequestVoteResponsePacket *</type>
+      <name>requestVoteResponseRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a34334bbbd0dac413f764091cba4a096c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCInstallSnapshotPacket *</type>
+      <name>installSnapshotRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a1ab070ea8d57998745cf13ecd9566977</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCInstallSnapshotResponsePacket *</type>
+      <name>installSnapshotResponseRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ad5d038573b6ce344fbff35045b2995fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCClientCommandResponsePacket *</type>
+      <name>clientCommandResponseRPC</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a9bced66ef24cbb43a5f2e3ebcab79b6f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>x</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a2a38abaac9e3ada41112a843d73dc02c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>configuration</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ae33c4338accc689f3e9a64fb721dcc97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>newConfiguration</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a95835032b1bb2f8f761af88b95d5102d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; latest_client_response &gt;</type>
+      <name>latestClientResponses</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a140126178b43c28e6f11177e1183ce2c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>currentTerm</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>afaf67954b32f935e1db6962e596146a3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>votedFor</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aa8b130d599dd6e6d1fd5e863b018f10d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; log_entry &gt;</type>
+      <name>log</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>abc536611d0aeb910bc1b02a209913450</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>commitIndex</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a58b108774d6315a8164e71095582fb90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>int</type>
+      <name>lastApplied</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aae73d01a1b1b5993cbf9297d43e156a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>nextIndex</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>aae5dc938db1a96e2a24e72ecb50c8f46</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>matchIndex</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a9bcbb03f80c2a8f4fa966a40b8fe0928</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>nextIndexNewConfig</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a37f93b8ab0f892277e6b4eabef37ee98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>vector&lt; int &gt;</type>
+      <name>matchIndexNewConfig</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>a63e7125a76fba3865294ffa6e12bfbca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>snapshot_file</type>
+      <name>snapshot</name>
+      <anchorfile>classServer.html</anchorfile>
+      <anchor>ab94798de8a945baceb8bacd8e1e02e27</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>snapshot_file</name>
+    <filename>structsnapshot__file.html</filename>
+    <member kind="variable">
+      <type>int</type>
+      <name>lastIncludedIndex</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>a49125da6869f2cef7b3c2b42c2e80e31</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>lastIncludedTerm</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>acea6cfb66d6f4efb1d7cd8b8a1842d7c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>var</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>a595d1e50e19f2c0d173f989ae1e96718</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>value</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>acd817df0a035cf9e4bf08b2ed9568921</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; int &gt;</type>
+      <name>cOld</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>ae8746c9b701c07c6d1477d1c822382ba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; int &gt;</type>
+      <name>cNew</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>af6611aa189181a9c04b6210f30c64c16</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>vector&lt; latest_client_response &gt;</type>
+      <name>clientsData</name>
+      <anchorfile>structsnapshot__file.html</anchorfile>
+      <anchor>a037fafac241a5057acc7ffc9f96284ed</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Switch</name>
+    <filename>classSwitch.html</filename>
+    <base>omnetpp::cSimpleModule</base>
+    <member kind="function">
+      <type></type>
+      <name>Switch</name>
+      <anchorfile>classSwitch.html</anchorfile>
+      <anchor>a54db96db46113c6a4904553796d183ce</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>activity</name>
+      <anchorfile>classSwitch.html</anchorfile>
+      <anchor>a278d8a7e7548137ebf04536734706918</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RPCPacket *</type>
+      <name>pk_copy</name>
+      <anchorfile>classSwitch.html</anchorfile>
+      <anchor>a985c127ca7fdf074987ab938a7bf4d5e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+</tagfile>

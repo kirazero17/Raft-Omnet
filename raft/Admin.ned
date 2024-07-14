@@ -1,3 +1,5 @@
+package raft;
+
 simple Admin
 {
     parameters:

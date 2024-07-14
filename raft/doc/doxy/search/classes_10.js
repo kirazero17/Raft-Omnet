@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['sendoptions_2298',['SendOptions',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/structomnetpp_1_1SendOptions.html',1,'omnetpp']]],
+  ['server_2299',['Server',['../classServer.html',1,'']]],
+  ['simtime_2300',['SimTime',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1SimTime.html',1,'omnetpp']]],
+  ['skipnanfilter_2301',['SkipNanFilter',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1SkipNanFilter.html',1,'omnetpp']]],
+  ['smoothcubicbeziercurverel_2302',['SmoothCubicBezierCurveRel',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/structomnetpp_1_1cPathFigure_1_1SmoothCubicBezierCurveRel.html',1,'omnetpp::cPathFigure']]],
+  ['smoothcubicbeziercurveto_2303',['SmoothCubicBezierCurveTo',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/structomnetpp_1_1cPathFigure_1_1SmoothCubicBezierCurveTo.html',1,'omnetpp::cPathFigure']]],
+  ['smoothcurverel_2304',['SmoothCurveRel',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/structomnetpp_1_1cPathFigure_1_1SmoothCurveRel.html',1,'omnetpp::cPathFigure']]],
+  ['smoothcurveto_2305',['SmoothCurveTo',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/structomnetpp_1_1cPathFigure_1_1SmoothCurveTo.html',1,'omnetpp::cPathFigure']]],
+  ['snapshot_5ffile_2306',['snapshot_file',['../structsnapshot__file.html',1,'']]],
+  ['statisticsrecorder_2307',['StatisticsRecorder',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1StatisticsRecorder.html',1,'omnetpp']]],
+  ['stringmapparamresolver_2308',['StringMapParamResolver',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1StringMapParamResolver.html',1,'omnetpp']]],
+  ['submoduleiterator_2309',['SubmoduleIterator',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1cModule_1_1SubmoduleIterator.html',1,'omnetpp::cModule']]],
+  ['sumfilter_2310',['SumFilter',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1SumFilter.html',1,'omnetpp']]],
+  ['sumperdurationfilter_2311',['SumPerDurationFilter',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1SumPerDurationFilter.html',1,'omnetpp']]],
+  ['sumrecorder_2312',['SumRecorder',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1SumRecorder.html',1,'omnetpp']]],
+  ['switch_2313',['Switch',['../classSwitch.html',1,'']]],
+  ['symboltable_2314',['SymbolTable',['/home/kagehl/Softwares/omnetpp-6.0.2//doc/api/classomnetpp_1_1cDynamicExpression_1_1SymbolTable.html',1,'omnetpp::cDynamicExpression']]]
+];

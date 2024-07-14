@@ -2,10 +2,18 @@ cplusplus {{
 #include "data_types.h"
 }}
 
-struct log_entry;
-struct clients_data;
-struct cluster_configuration;
-struct snapshot_file;
+struct raft::log_entry{
+	@existingClass;
+}
+
+struct raft::cluster_configuration{
+	@existingClass;
+}
+
+struct raft::snapshot_file{
+	@existingClass;
+}
+
 
 enum RPCPacketType
 {
@@ -33,7 +41,7 @@ packet RPCClientCommandPacket extends RPCPacket{
     char var;
     int value;
     int type; // Convention: READ = 0, WRITE = 1;
-    cluster_configuration clusterConfig;
+    raft::cluster_configuration clusterConfig;
 }
 
 packet RPCClientCommandResponsePacket extends RPCPacket{
@@ -48,7 +56,7 @@ packet RPCAppendEntriesPacket extends RPCPacket
     int leaderId;                       // leader identifier so follower can redirect clients --> index of leader gate port in the Switch
     int prevLogIndex = 0;               // index of log entry immediately preceding new ones          
     int prevLogTerm = 0;                // term of prevLogIndex entry
-    log_entry entry;                    // log entries to store (empty for heartbeat);
+    raft::log_entry entry;                    // log entries to store (empty for heartbeat);
     int leaderCommit;                   // leader’s commitIndex
 };
 
@@ -80,7 +88,7 @@ packet RPCInstallSnapshotPacket extends RPCPacket
     int leaderId;           // leader identifier so follower can redirect clients --> index of leader gate port in the Switch
     int lastIncludedIndex;  // the snapshot replace all entries up through and including this index
     int lastIncludedTerm;   // term associated to lastIncludedIndex entry
-    snapshot_file snapshot;
+    raft::snapshot_file snapshot;
 };
 
 packet RPCInstallSnapshotResponsePacket extends RPCPacket

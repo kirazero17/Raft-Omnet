@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="class">
+    <name>raft.Admin</name>
+    <filename>raft.Admin.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>raft.Client</name>
+    <filename>raft.Client.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.DatarateChannel</name>
+    <filename>ned.DatarateChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.DelayChannel</name>
+    <filename>ned.DelayChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.IBidirectionalChannel</name>
+    <filename>ned.IBidirectionalChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.IdealChannel</name>
+    <filename>ned.IdealChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ned.IUnidirectionalChannel</name>
+    <filename>ned.IUnidirectionalChannel.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>raft.Raft</name>
+    <filename>raft.Raft.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>raft.Server</name>
+    <filename>raft.Server.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>raft.Switch</name>
+    <filename>raft.Switch.html</filename>
+  </compound>
+</tagfile>

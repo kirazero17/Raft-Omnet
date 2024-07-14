@@ -2,6 +2,8 @@
 // A client computer which periodically connects to the
 // server for data exchange.
 //
+package raft;
+
 simple Client
 {
     parameters:

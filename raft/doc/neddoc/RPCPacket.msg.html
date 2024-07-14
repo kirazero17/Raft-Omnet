@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="OMNeT++ NED doc generator"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<link rel="stylesheet" href="material-icons.css">
+<link rel="stylesheet" href="material.blue-light_blue.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<title>RPCPacket.msg</title>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div id="top" class="mdl-layout__header-row">
+      <span class="mdl-layout-title">RPCPacket.msg</span>
+      <div class="mdl-layout-spacer"></div>
+<!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search" />
+          <label class="mdl-textfield__label" for="search">Enter your query...</label>
+        </div>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">code</i>
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">OMNeT++ Website</li>
+      </ul>
+-->
+    </div>
+  </header>
+
+  <div class="drawer mdl-layout__drawer">
+    <nav id="side-nav" class="mdl-navigation">
+      <div id="nav-tree">
+        <div id="nav-tree-contents">
+          <div id="nav-sync" class="sync"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){initNavTree(location.pathname.split("/").slice(-1).toString(),'');});
+  </script>
+
+  <main class="mdl-layout__content">
+    <div id="doc-content">
+
+    <h2 class="comptitle">Msg File RPCPacket.msg</h2>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+   <tr>
+      <td><a href="RPCPacketType.html">RPCPacketType</a></td>
+      <td><i>enum</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCPacket.html">RPCPacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCClientCommandPacket.html">RPCClientCommandPacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCClientCommandResponsePacket.html">RPCClientCommandResponsePacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCAppendEntriesPacket.html">RPCAppendEntriesPacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCAppendEntriesResponsePacket.html">RPCAppendEntriesResponsePacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCRequestVotePacket.html">RPCRequestVotePacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCRequestVoteResponsePacket.html">RPCRequestVoteResponsePacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCInstallSnapshotPacket.html">RPCInstallSnapshotPacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+   <tr>
+      <td><a href="RPCInstallSnapshotResponsePacket.html">RPCInstallSnapshotResponsePacket</a></td>
+      <td><i>packet</i></td>
+      <td><i>(no description)</i></td>
+   </tr>
+</table>
+<h3 class="subtitle">Source code</h3>
+<pre class="src">
+<span style="color: #800000; font-weight: bold; ">cplusplus</span><span style="color: #3d3d3d; "> {{
+#</span><span style="color: #3d3d3d; ">include</span><span style="color: #3d3d3d; "> </span><span style="color: #008000; ">&quot;data_types.h&quot;</span><span style="color: #3d3d3d; ">
+}}
+
+</span><span style="color: #800000; font-weight: bold; ">struct</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">log_entry</span><span style="color: #3d3d3d; ">;
+</span><span style="color: #800000; font-weight: bold; ">struct</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">clients_data</span><span style="color: #3d3d3d; ">;
+</span><span style="color: #800000; font-weight: bold; ">struct</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">cluster_configuration</span><span style="color: #3d3d3d; ">;
+</span><span style="color: #800000; font-weight: bold; ">struct</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">snapshot_file</span><span style="color: #3d3d3d; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">enum</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacketType</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #3d3d3d; ">RPC_APPEND_ENTRIES</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">0</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_REQUEST_VOTE</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">1</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_INSTALL_SNAPSHOT</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">2</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_APPEND_ENTRIES_RESPONSE</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">3</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_REQUEST_VOTE_RESPONSE</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">4</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_CLIENT_COMMAND</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">5</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_CLIENT_COMMAND_RESPONSE</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">6</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_ACK</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">7</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #3d3d3d; ">RPC_INSTALL_SNAPSHOT_RESPONSE</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">8</span><span style="color: #3d3d3d; ">;
+};
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">srcAddress</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">destAddress</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">isBroadcast</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">false</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">displayString</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">&quot;b=10,10,oval,kind,kind,1&quot;</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">sequenceNumber</span><span style="color: #3d3d3d; ">;
+};
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCClientCommandPacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">{
+    </span><span style="color: #000080; font-weight: bold; ">char</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">var</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">value</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">type</span><span style="color: #3d3d3d; ">; </span><span style="color: #808080; font-style: italic; ">// Convention: READ = 0, WRITE = 1;
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #3d3d3d; ">cluster_configuration</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">clusterConfig</span><span style="color: #3d3d3d; ">;
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCClientCommandResponsePacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">value</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">redirect</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">false</span><span style="color: #3d3d3d; ">;
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">lastKnownLeader</span><span style="color: #3d3d3d; ">;
+}
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCAppendEntriesPacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">term</span><span style="color: #3d3d3d; ">;                           </span><span style="color: #808080; font-style: italic; ">// leader's term
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">leaderId</span><span style="color: #3d3d3d; ">;                       </span><span style="color: #808080; font-style: italic; ">// leader identifier so follower can redirect clients --&gt; index of leader gate port in the Switch
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">prevLogIndex</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">0</span><span style="color: #3d3d3d; ">;               </span><span style="color: #808080; font-style: italic; ">// index of log entry immediately preceding new ones          
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">prevLogTerm</span><span style="color: #3d3d3d; "> = </span><span style="color: #008000; ">0</span><span style="color: #3d3d3d; ">;                </span><span style="color: #808080; font-style: italic; ">// term of prevLogIndex entry
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #3d3d3d; ">log_entry</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">entry</span><span style="color: #3d3d3d; ">;                    </span><span style="color: #808080; font-style: italic; ">// log entries to store (empty for heartbeat);
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">leaderCommit</span><span style="color: #3d3d3d; ">;                   </span><span style="color: #808080; font-style: italic; ">// leader&rsquo;s commitIndex
+</span><span style="color: #3d3d3d; ">};
+
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCAppendEntriesResponsePacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">term</span><span style="color: #3d3d3d; ">;                           </span><span style="color: #808080; font-style: italic; ">// currentTerm, for leader to update itself
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">success</span><span style="color: #3d3d3d; ">;                       </span><span style="color: #808080; font-style: italic; ">// true if follower contained entry matching prevLogIndex and prevLogTerm
+</span><span style="color: #3d3d3d; ">};
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCRequestVotePacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">term</span><span style="color: #3d3d3d; ">;                           </span><span style="color: #808080; font-style: italic; ">// candidate's term
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">candidateId</span><span style="color: #3d3d3d; ">;                    </span><span style="color: #808080; font-style: italic; ">// candidate identifier requesting vote --&gt; index of candidate gate port in the Switch
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">lastLogIndex</span><span style="color: #3d3d3d; ">;                   </span><span style="color: #808080; font-style: italic; ">// index of candidate&rsquo;s last log entry
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">lastLogTerm</span><span style="color: #3d3d3d; ">;                    </span><span style="color: #808080; font-style: italic; ">// term of candidate&rsquo;s last log entry
+</span><span style="color: #3d3d3d; ">};
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCRequestVoteResponsePacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">term</span><span style="color: #3d3d3d; ">;                           </span><span style="color: #808080; font-style: italic; ">// currentTerm, for candidate to update itself
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">voteGranted</span><span style="color: #3d3d3d; ">;                   </span><span style="color: #808080; font-style: italic; ">// true means candidate received vote
+</span><span style="color: #3d3d3d; ">
+};
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCInstallSnapshotPacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">term</span><span style="color: #3d3d3d; ">;               </span><span style="color: #808080; font-style: italic; ">// leader's term
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">leaderId</span><span style="color: #3d3d3d; ">;           </span><span style="color: #808080; font-style: italic; ">// leader identifier so follower can redirect clients --&gt; index of leader gate port in the Switch
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">lastIncludedIndex</span><span style="color: #3d3d3d; ">;  </span><span style="color: #808080; font-style: italic; ">// the snapshot replace all entries up through and including this index
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">lastIncludedTerm</span><span style="color: #3d3d3d; ">;   </span><span style="color: #808080; font-style: italic; ">// term associated to lastIncludedIndex entry
+</span><span style="color: #3d3d3d; ">    </span><span style="color: #3d3d3d; ">snapshot_file</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">snapshot</span><span style="color: #3d3d3d; ">;
+};
+
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCInstallSnapshotResponsePacket</span><span style="color: #3d3d3d; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">RPCPacket</span><span style="color: #3d3d3d; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #3d3d3d; "> </span><span style="color: #3d3d3d; ">term</span><span style="color: #3d3d3d; "> ;      </span><span style="color: #808080; font-style: italic; ">// currentTerm, for leader to update itself
+</span><span style="color: #3d3d3d; ">}
+</span></pre>
+
+<hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.svg"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+
+
+    </div><!-- doc-content -->
+  </main>
+</div>
+
+<script type="text/javascript" src="material.min.js"></script>
+</body>
+</html>
