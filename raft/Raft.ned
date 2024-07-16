@@ -3,19 +3,38 @@
 //
 package raft;
 
+import inet.node.ethernet.EthernetSwitch;
+import inet.common.scenario.ScenarioManager;
+import inet.common.packet.recorder.PcapRecorder;
+
 network Raft
 {
     parameters:
         int numServers @prompt("Number of servers") = default(3);
         int numClients @prompt("Number of clients") = default(2);
+        int numPcapRecorders @prompt("Number of PCap recorders") = default(1);
+        @display("bgb=793,486");
     submodules:
-        admin: Admin{
+        admin: Admin {
             parameters:
                 @display("p=70,40");
         }
         client[numClients]: Client {
             parameters:
-                @display("p=210,70,m,10,200");
+                @display("p=210,56,m,10,200");
+        }
+        pcapRecorder[numPcapRecorders]: PcapRecorder {
+            parameters:
+                @display("p=147,397");
+                pcapFile = "captures/" + expand("${configname}-") + fullPath() + ".pcapng";
+                moduleNamePatterns = "switch";
+                packetFilter = "*";
+                sendingSignalNames = "packetSent";
+                receivingSignalNames = "packetReceived";
+                dumpProtocols = "ethernetmac unknown ipv4 tcp udp";
+        }
+        scenarioManager: ScenarioManager {
+            @display("p=425,397");
         }
         switch: Switch {
             parameters:

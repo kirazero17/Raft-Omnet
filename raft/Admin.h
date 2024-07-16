@@ -26,6 +26,7 @@ namespace raft
         vector<int> toPurge;
         cModule *Switch, *serverToPurge;
 
+
         cMessage *changeConfig, *resendTimer;
         cGate *newServerPortIN, *newServerPortOUT;
         cGate *newSwitchPortIN, *newSwitchPortOUT;

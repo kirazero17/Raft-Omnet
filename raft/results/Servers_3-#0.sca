@@ -1,0 +1,233 @@
+version 3
+run Servers_3-0-20240716-02:03:36-57030
+attr configname Servers_3
+attr datetime 20240716-02:03:36
+attr datetimef 20240716-020336
+attr experiment Servers_3
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Raft
+attr processid 57030
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../Softwares/omnetpp-6.0.2/samples/inet4.5/images
+config description "Cluster of 3 servers"
+config **.numServers 3
+config **.numClients 3
+config **.maxLogSizeBeforeSnapshot 8
+config **.hearthBeatTime 0.02s
+config **.lowElectionTimeout 0.05s
+config **.highElectionTimeout 0.45s
+config **.lowCrashTimeout 0.5s
+config **.highCrashTimeout 3.5s
+config **.reviveTimeout 0.25s
+config **.resendTimeout 0.01s
+config **.errorRateThreshold 0.95
+config **.instantiatedAtRunTime false
+config **switch.delay 0.00001s
+config **admin.resendTimer 1s
+config **admin.numberOfNewServers 2
+config **admin.numberOfserversToRemove 2
+config **admin.changeConfigTime 4s
+config **.lowCommandTimeout 0.15s
+config **.highCommandTimeout 0.2s
+config **.requestTimeout 0.1s
+config **.clientErrorRateThreshold 0.70
+config sim-time-limit 900s
+config network Raft
+
+par Raft.client[0].port$o.channel typename "\"ned.DelayChannel\""
+par Raft.client[0].port$o.channel disabled false
+attr mutable ""
+par Raft.client[0].port$o.channel delay 0.01s
+attr mutable ""
+attr unit s
+par Raft.switch.port$o[1].channel typename "\"ned.DelayChannel\""
+par Raft.switch.port$o[1].channel disabled false
+attr mutable ""
+par Raft.switch.port$o[1].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Raft.client[1].port$o.channel typename "\"ned.DelayChannel\""
+par Raft.client[1].port$o.channel disabled false
+attr mutable ""
+par Raft.client[1].port$o.channel delay 0.01s
+attr mutable ""
+attr unit s
+par Raft.switch.port$o[2].channel typename "\"ned.DelayChannel\""
+par Raft.switch.port$o[2].channel disabled false
+attr mutable ""
+par Raft.switch.port$o[2].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Raft.client[2].port$o.channel typename "\"ned.DelayChannel\""
+par Raft.client[2].port$o.channel disabled false
+attr mutable ""
+par Raft.client[2].port$o.channel delay 0.01s
+attr mutable ""
+attr unit s
+par Raft.switch.port$o[3].channel typename "\"ned.DelayChannel\""
+par Raft.switch.port$o[3].channel disabled false
+attr mutable ""
+par Raft.switch.port$o[3].channel delay 0.01s
+attr mutable ""
+attr unit s
+par Raft.server[0].port$o.channel typename "\"ned.DelayChannel\""
+par Raft.server[0].port$o.channel disabled false
+attr mutable ""
+par Raft.server[0].port$o.channel delay 0.001s
+attr mutable ""
+attr unit s
+par Raft.switch.port$o[4].channel typename "\"ned.DelayChannel\""
+par Raft.switch.port$o[4].channel disabled false
+attr mutable ""
+par Raft.switch.port$o[4].channel delay 0.001s
+attr mutable ""
+attr unit s
+par Raft.server[1].port$o.channel typename "\"ned.DelayChannel\""
+par Raft.server[1].port$o.channel disabled false
+attr mutable ""
+par Raft.server[1].port$o.channel delay 0.001s
+attr mutable ""
+attr unit s
+par Raft.switch.port$o[5].channel typename "\"ned.DelayChannel\""
+par Raft.switch.port$o[5].channel disabled false
+attr mutable ""
+par Raft.switch.port$o[5].channel delay 0.001s
+attr mutable ""
+attr unit s
+par Raft.server[2].port$o.channel typename "\"ned.DelayChannel\""
+par Raft.server[2].port$o.channel disabled false
+attr mutable ""
+par Raft.server[2].port$o.channel delay 0.001s
+attr mutable ""
+attr unit s
+par Raft.switch.port$o[6].channel typename "\"ned.DelayChannel\""
+par Raft.switch.port$o[6].channel disabled false
+attr mutable ""
+par Raft.switch.port$o[6].channel delay 0.001s
+attr mutable ""
+attr unit s
+par Raft.admin typename "\"raft.Admin\""
+par Raft.admin numberOfNewServers 2
+par Raft.admin numberOfserversToRemove 2
+par Raft.admin resendTimer 1s
+attr unit s
+par Raft.admin changeConfigTime 4s
+attr unit s
+par Raft.client[0] typename "\"raft.Client\""
+par Raft.client[0] lowCommandTimeout 0.15s
+attr unit s
+par Raft.client[0] highCommandTimeout 0.2s
+attr unit s
+par Raft.client[0] requestTimeout 0.1s
+attr prompt "Request timeout"
+attr unit s
+par Raft.client[0] clientErrorRateThreshold 0.7
+par Raft.client[1] typename "\"raft.Client\""
+par Raft.client[1] lowCommandTimeout 0.15s
+attr unit s
+par Raft.client[1] highCommandTimeout 0.2s
+attr unit s
+par Raft.client[1] requestTimeout 0.1s
+attr prompt "Request timeout"
+attr unit s
+par Raft.client[1] clientErrorRateThreshold 0.7
+par Raft.client[2] typename "\"raft.Client\""
+par Raft.client[2] lowCommandTimeout 0.15s
+attr unit s
+par Raft.client[2] highCommandTimeout 0.2s
+attr unit s
+par Raft.client[2] requestTimeout 0.1s
+attr prompt "Request timeout"
+attr unit s
+par Raft.client[2] clientErrorRateThreshold 0.7
+par Raft.pcapRecorder[0] typename "\"inet.common.packet.recorder.PcapRecorder\""
+par Raft.pcapRecorder[0] verbose true
+par Raft.pcapRecorder[0] pcapFile "\"captures/Servers_3-Raft.pcapRecorder[0].pcapng\""
+par Raft.pcapRecorder[0] fileFormat "\"pcapng\""
+attr enum pcap,pcapng
+par Raft.pcapRecorder[0] snaplen 65535
+par Raft.pcapRecorder[0] dumpBadFrames true
+par Raft.pcapRecorder[0] moduleNamePatterns "\"switch\""
+par Raft.pcapRecorder[0] sendingSignalNames "\"packetSent\""
+par Raft.pcapRecorder[0] receivingSignalNames "\"packetReceived\""
+par Raft.pcapRecorder[0] dumpProtocols "\"ethernetmac unknown ipv4 tcp udp\""
+par Raft.pcapRecorder[0] packetFilter "(omnetpp::cValueHolder)holder: \"*\""
+par Raft.pcapRecorder[0] helpers "\"\""
+par Raft.pcapRecorder[0] alwaysFlush false
+par Raft.pcapRecorder[0] displayStringTextFormat "\"rec: %n pks\""
+par Raft.scenarioManager typename "\"inet.common.scenario.ScenarioManager\""
+par Raft.scenarioManager script "<script/> at content:1"
+par Raft.switch typename "\"raft.Switch\""
+par Raft.switch delay 1e-05s
+attr prompt "Switch delay"
+attr unit s
+par Raft.server[0] typename "\"raft.Server\""
+par Raft.server[0] maxLogSizeBeforeSnapshot 8
+par Raft.server[0] errorRateThreshold 0.95
+par Raft.server[0] instantieatedAtRunTime false
+par Raft.server[0] hearthBeatTime 0.02s
+attr unit s
+par Raft.server[0] lowElectionTimeout 0.05s
+attr unit s
+par Raft.server[0] highElectionTimeout 0.45s
+attr unit s
+par Raft.server[0] resendTimeout 0.01s
+attr unit s
+par Raft.server[0] lowCrashTimeout 0.5s
+attr unit s
+par Raft.server[0] highCrashTimeout 3.5s
+attr unit s
+par Raft.server[0] reviveTimeout 0.25s
+attr unit s
+par Raft.server[1] typename "\"raft.Server\""
+par Raft.server[1] maxLogSizeBeforeSnapshot 8
+par Raft.server[1] errorRateThreshold 0.95
+par Raft.server[1] instantieatedAtRunTime false
+par Raft.server[1] hearthBeatTime 0.02s
+attr unit s
+par Raft.server[1] lowElectionTimeout 0.05s
+attr unit s
+par Raft.server[1] highElectionTimeout 0.45s
+attr unit s
+par Raft.server[1] resendTimeout 0.01s
+attr unit s
+par Raft.server[1] lowCrashTimeout 0.5s
+attr unit s
+par Raft.server[1] highCrashTimeout 3.5s
+attr unit s
+par Raft.server[1] reviveTimeout 0.25s
+attr unit s
+par Raft.server[2] typename "\"raft.Server\""
+par Raft.server[2] maxLogSizeBeforeSnapshot 8
+par Raft.server[2] errorRateThreshold 0.95
+par Raft.server[2] instantieatedAtRunTime false
+par Raft.server[2] hearthBeatTime 0.02s
+attr unit s
+par Raft.server[2] lowElectionTimeout 0.05s
+attr unit s
+par Raft.server[2] highElectionTimeout 0.45s
+attr unit s
+par Raft.server[2] resendTimeout 0.01s
+attr unit s
+par Raft.server[2] lowCrashTimeout 0.5s
+attr unit s
+par Raft.server[2] highCrashTimeout 3.5s
+attr unit s
+par Raft.server[2] reviveTimeout 0.25s
+attr unit s
+par Raft typename "\"raft.Raft\""
+par Raft numServers 3
+attr prompt "Number of servers"
+par Raft numClients 3
+attr prompt "Number of clients"
+par Raft numPcapRecorders 1
+attr prompt "Number of PCap recorders"
+

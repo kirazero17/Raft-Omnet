@@ -22,10 +22,6 @@ simple Switch
     parameters:
         double delay @unit(s) @prompt("Switch delay");
         @display("i=device/switch_l;q=queue");
-        @signal[packetSent](type=RPCPacket);
-        @signal[packetSent](type=cMessage);
-        @signal[packetReceived](type=RPCPacket);
-        
     gates:
         inout port[];
 }

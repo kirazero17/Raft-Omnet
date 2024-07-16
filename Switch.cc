@@ -1,5 +1,4 @@
 #include "RPCPacket_m.h"
-#include "inet/common/Simsignals.h"
 
 using namespace omnetpp;
 
@@ -14,8 +13,6 @@ namespace raft
     {
       private:
         RPCPacket *pk_copy;
-        cHistogram hopCountStats;
-        cOutVector hopCountVector;
       public:
         Switch() : cSimpleModule(STACKSIZE) {}
         virtual void activity() override;
@@ -40,7 +37,6 @@ namespace raft
 
 
             RPCPacket *pk = check_and_cast<RPCPacket *>(msg);
-            emit(inet::packetReceivedSignal, pk);
             // Send in broadcast
             int source = pk->getSrcAddress();
             if (pk->isBroadcast() == true){
@@ -55,7 +51,6 @@ namespace raft
                             // Check that receiver isn't the sender himself
                             if (gate("port$o", i)->getId() != source){
                                     pk_copy = pk->dup();
-                                    emit(inet::packetSentSignal, pk_copy);
                                     send(pk_copy, "port$o", i);
                             }
                         }
@@ -69,7 +64,6 @@ namespace raft
 
                 const char* destName = gate(destAddress)->getNextGate()->getOwnerModule()->getFullName();
                 EV << "Relaying msg received to " << destName << "  (addr = " << destAddress << ")\n";
-                emit(inet::packetSentSignal, msg);
                 send(msg, destAddress);
                 /* if (gate(destAddress)->isConnected())
                 {
